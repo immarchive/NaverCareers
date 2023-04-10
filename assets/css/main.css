@@ -1,0 +1,739 @@
+.wrapper{
+    padding-top: 64px;
+}
+.inner1{
+    max-width: 1200px;
+    padding: 0 104px;
+    margin: 0 auto;
+}
+
+
+
+.sc-visual .visual-slide .main-video{
+    position: relative;
+    width: 100%;
+    height: 544px;
+    object-fit: cover;
+}
+.sc-visual .visual-slide .text-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.sc-visual .visual-slide .slogan{
+    overflow: hidden;
+    font-size: 100px;
+    line-height: 1.2;
+    letter-spacing: -2.4px;
+    font-weight: 800;
+    white-space: nowrap;
+    color: #fff;
+    text-shadow: 6px 6px 18px rgb(0 0 0 / 16%);
+    animation: fade-in 0.2s linear forwards;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.sc-visual .visual-slide .swiper-slide-active .slogan{
+    opacity: 0;
+    animation: wave-in 0.3s ease-out forwards, fade-in 0.8s linear forwards;
+    animation-delay: 0.8s;
+}
+.sc-visual .visual-slide .swiper-slide-active .slogan br{
+    display: none;
+}
+@keyframes fade-out {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+@keyframes wave-in {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+
+
+
+
+/* @@ search */
+.sc-search{
+    position: absolute;
+    width: 100%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+.sc-search .group-search{
+    display: flex;
+    background: #fff;
+}
+.sc-search .input-area{
+    flex: 1;
+    display: flex;
+}
+.sc-search .select-area{
+    flex: 1;
+    display: flex;
+}
+.sc-search .title{
+    display: block;
+    margin-right: 9px;
+    white-space: nowrap;
+    line-height: 54px;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    align-items: center;
+}
+
+.group-search{ display: none; }
+.popup-search{ display: none; }
+
+/* 키워드 */
+.sc-search .keyword-ic{
+    display: flex;
+    align-items: center;
+    padding: 0 28px 0 21px;
+}
+.sc-search .keyword-ic .ic{
+    display: block;
+    background-position: -245px -40px;
+    width: 18px;
+    height: 18px;
+}
+.sc-search input{
+    padding-right: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 54px;
+}
+.sc-search input::placeholder{
+    color: #d0d0d0;
+}
+.sc-search .select-box{
+    display: flex;
+    flex: 1;
+}
+.sc-search .select-box select {
+    width: 100%;
+    position: relative;
+    padding: 0 25px 0 9px;
+    font-size: 14px;
+    line-height: 54px;
+    color: #d0d0d0;
+    cursor: pointer;
+    background: url(../img/ic-btn-down.png);
+    background-position: calc(100% - 10px) center;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    background-size: 8px 5px;
+}
+.sc-search .btn-search{
+    width: 97px;
+    height: 54px;
+    line-height: 54px;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 14px;
+}
+.sc-search .btn-search:hover{
+    background-color: #16EF72;
+}
+
+
+
+.sc-teams{
+    padding-bottom: 89px;
+    background-color: #fafafa;
+    color: #000;
+}
+.sc-teams .headline{
+    padding-top: 126px;
+}
+.sc-teams .contents-area{
+    margin-top: 70px;
+}
+.sc-teams .contents-area .joinus-item .inner1{
+    display: flex;
+}
+.sc-teams .contents-area .joinus-item a:hover{
+    background-color: #ebebeb;
+    color: #000;
+    display: block;
+}
+.sc-teams .contents-area .joinus-item .text-box{
+    display: inline-block;
+    padding: 20px 0;
+    vertical-align: top;
+    width: 50%;
+}
+.sc-teams .contents-area .joinus-item strong{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 38px;
+    line-height: 60px;
+    letter-spacing: -0.34px;
+    font-weight: normal;
+}
+.sc-teams .contents-area .joinus-item .num-badge{
+    margin-top: 13px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 18px;
+    font-size: 15px;
+    letter-spacing: -0.3px;
+}
+.sc-teams .contents-area .joinus-item .num-badge::before{
+    content: '';
+    position: absolute;
+    top: -1px;
+    right: -14px;
+    background-position: -176px -105px;
+    width: 9px;
+    height: 9px;
+}
+.sc-teams .contents-area .joinus-item .desc{
+    padding: 20px 0 20px 15px;
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    font-size: 22px;
+    line-height: 60px;
+    letter-spacing: -0.44px;
+}
+
+
+
+.sc-people{
+    overflow: hidden;
+    padding-top: 112px;
+}
+.sc-people .people-slide{
+    margin-top: 60px;
+    position: relative;
+    padding-bottom: 68px;
+    overflow: initial;
+}
+.sc-people .people-slide .swiper-slide .img-area{
+    position: relative;
+    background: #f00;
+    padding-bottom: 47.403%;
+}
+.swiper-slide img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sc-people .people-slide .text-wrap{
+    overflow: hidden;
+    margin-top: 29px;
+    word-break: keep-all;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.sc-people .people-slide .text-wrap .title{
+    display: inline;
+    padding-right: 26px;
+    line-height: 36px;
+    font-size: 25px;
+    letter-spacing: -0.5px;
+    font-weight: bold;
+}
+.sc-people .people-slide .text-wrap .btn-more{
+    margin-top: 4px;
+}
+.sc-people .people-slide .info-wrap{
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.28px;
+    color: #000;
+}
+.sc-people .people-slide .info-wrap .name{
+    position: relative;
+    margin-left: 12px;
+}
+.sc-people .people-slide .info-wrap .name::before{
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 4px;
+    width: 1px;
+    height: 10px;
+    background-color: #000;
+}
+
+
+
+.btn-box{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.btn-box .btn{
+    background-position: -187px -172px;
+    width: 32px;
+    height: 32px;
+}
+.btn-box .btn.swiper-button-disabled{
+    opacity: 0.5;
+}
+.btn-box .next{ 
+    transform: rotate(180deg); 
+}
+
+
+
+.sc-benefits{
+    padding-top: 112px;
+}
+.sc-benefits .benefits-slide{
+    margin-top: 55px;
+    overflow: hidden;
+    position: relative;
+}
+.sc-benefits .benefits-slide .swiper-wrapper{
+    padding-bottom: 68px;
+}
+.sc-benefits .benefits-slide .swiper-slide .img-area{
+    padding-bottom: 100%;
+    position: relative;
+}
+.sc-benefits .benefits-slide .swiper-slide .text-wrap{
+    overflow: hidden;
+    margin-top: 29px;
+    word-break: keep-all;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.sc-benefits .benefits-slide .swiper-slide .text-wrap .title{
+    display: block;
+    padding-right: 26px;
+    line-height: 36px;
+    font-size: 25px;
+    letter-spacing: -0.5px;
+    font-weight: bold;
+}
+.sc-benefits .benefits-slide .swiper-slide .text-wrap .desc{
+    display: block;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: -0.36px;
+    color: #000;
+}
+
+
+
+.sc-board .title-area{
+    padding: 95px 0 102px;
+}
+.sc-board .title-area .sub-title{
+    font-size: 25px;
+    line-height: 32px;
+    letter-spacing: -0.25px;
+    color: #000;
+}
+.sc-board .title-area .desc{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: -0.36px;
+    color: #000;
+    font-weight: lighter;
+    margin-top: 18px;
+}
+.sc-board .title-area .desc::after{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 11px;
+    background-position: -76px -172px;
+    width: 32px;
+    height: 32px;
+    content: '';
+}
+
+
+
+
+/* 1200px ~ 1024px */
+@media (max-width:1200px) {
+    .wrapper{
+        padding-top: 60px;
+    }
+    .sc-visual .visual-slide .slogan{
+        font-size: 80px;
+    }
+    .sc-benefits .benefits-slide .swiper-slide .text-wrap .desc br{
+        display: none; 
+    }
+}
+
+ /* 1024px ~ 768px */
+@media (max-width:1024px) {
+    .inner1 {
+        padding: 0 22px;
+    }
+
+    .sc-visual .visual-slide .slogan{
+        font-size: 60px;
+    }
+
+    .headline{
+        margin-bottom: 11px;
+    font-size: 36px;
+    line-height: 50px;
+    letter-spacing: -0.7px;
+    }
+    .title-area .desc{
+        padding-right: 20px;
+        margin-bottom: 9px;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: -0.32px;
+    }
+    .btn-more{
+        font-size: 12px;
+        line-height: 22px;
+        letter-spacing: -0.24px;
+    }
+    .btn-more::before{
+        bottom: 2px;
+    }
+
+    .sc-search{
+        display: none;
+    }
+    .group-search{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        background-color: #ebebeb;
+        width: 100%;
+        margin-top: 22px;
+        padding: 10px;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: -0.28px;
+        color: #696868;
+        font-weight: bold;
+        box-sizing: border-box;
+    }
+    .group-search .btn-search .ic-btn{
+        display: block;
+        background-position: -140px -125px;
+        width: 19px;
+        height: 19px;
+    }
+
+    .popup-search{
+        display: none;
+    }
+    .popup-search.on{
+        display: block;
+        background: #fff;
+        font-family: "NanumSquare", "나눔스퀘어", "돋움", dotum, arial, sans-serif;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        z-index: 100;
+        overflow: auto;
+    }
+    .popup-search .popup-inner{
+        padding: 60px 32px;
+    }
+
+    .popup-search .search-area{
+        position: relative;
+        border-bottom: 1px solid #d0d0d0;
+    }
+    .popup-search .search-area input {
+        width: 95%;
+        height: 42px;
+    }
+    .popup-search .search-area input::placeholder{
+        font-weight: bold;
+        color: #d0d0d0;
+        font-family: "TTHoves", "NanumSquare", "나눔스퀘어", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple SD Gothic Neo", "돋움", dotum, arial, sans-serif;
+    }
+    .popup-search .search-area button{
+        width: 100%;
+        position: absolute;
+        top: 50%; right: 0;
+        transform: translateY(-50%);
+        padding: 8px 0;
+    }
+    .popup-search .search-area .btn-search{
+        background-position: -268px -40px;
+        width: 15px;
+        height: 15px;
+    }
+    .popup-search .btn-menu-close{
+        position: absolute;
+        top: 24px;
+        left: 22px;
+        background-position: -110px -28px;
+        width: 14px;
+        height: 14px;
+        display: block;
+    }
+
+    .chk-area{
+        margin-top: 45px;
+    }
+    .chk-area label{
+        padding-left: 19px;
+    }
+    .chk-area .chk-box.other label{
+        padding-left: 0;
+    }
+    .chk-area label::before{
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border: 1px solid #d0d0d0;
+        border-radius: 50%;
+        content: '';
+        margin-right: 10px;
+    }
+    .chk-area input{
+        position: absolute;
+        right: 0;
+    }
+    .chk-area input:checked+label::before{
+        background: #000;
+        border: 1px solid #fff;
+    }
+
+    .chk-area .chk-wrap{
+        display: none;; 
+        margin-top: 14px;
+    }
+    .chk-area .chk-wrap.on{
+        display: block;
+        margin-top: 14px;
+    }
+    .chk-area span{
+        margin-top: 14px; 
+        line-height: 26px; 
+        letter-spacing: -0.28px; 
+        font-size: 14px;
+    }
+    .chk-area .title{
+        margin-top: 14px; 
+        display: block;
+    }
+    .chk-area .title::before{
+        background-position: -136px -93px;
+        content: '';
+        display: inline-block;
+        width: 8px;
+        height: 5px;
+        margin-right: 10px;
+        margin-bottom: 2px;
+    }
+    .chk-area .title.on::before{
+        transform: rotate(180deg);
+    }
+    .chk-area .title.sub{
+        padding-left: 20px;
+    }
+    .chk-area .chk-box{
+        margin-top: 14px;
+    }
+    .chk-area .sub-box .sub-list{
+        display: none;
+    }
+    .chk-area .sub-box .sub-list.on{
+        display: block;
+    }
+    .chk-area .sub-box .sub-list .sub-item{
+        margin-top: 14px;
+    }
+
+    .popup-search .clear{
+        margin-top: 42px;
+        position: relative;
+        top: auto;
+        right: auto;
+        font-size: 12px;
+        line-height: 22px;
+        letter-spacing: -0.24px;
+        font-weight: bold;
+    }
+    .popup-search .clear::before{
+        content: '';
+        position: absolute;
+        bottom: 3px;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background-color: #000;
+    }
+
+
+    .sc-teams{
+        padding: 22px 0 50px;
+    }
+    .sc-teams .headline{
+        padding-top: 40px;
+    }
+    .sc-teams .contents-area .joinus-item .inner1{
+        display: block;
+        padding: 16px 22px;
+    }
+    .sc-teams .contents-area .joinus-item .text-box{
+        width: 100%;
+        padding: 0;
+    }
+    .sc-teams .contents-area .joinus-item strong{
+        font-size: 24px;
+        line-height: 38px;
+        letter-spacing: -0.48px;
+    }
+    .sc-teams .contents-area .joinus-item .desc{
+        margin-top: 1px;
+        width: 100%;
+        padding: 0;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: -0.32px;
+    }
+    .sc-teams .contents-area{
+        margin-top: 29px;
+    }
+    .sc-people {
+        padding: 68px 0 56px;
+    }
+    .sc-benefits{
+        padding-top: 0;
+    }
+    .sc-benefits .benefits-slide .swiper-slide .text-wrap .title{
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: -0.36px;
+    }
+    .sc-benefits .benefits-slide .swiper-slide .text-wrap .desc{
+        margin-top: 3px;
+        font-size: 14px;
+        line-height: 26px;
+        letter-spacing: -0.28px;
+    }
+    .sc-board .title-area{
+        padding: 71px 0 99px;
+    }
+    .sc-board .title-area .desc{
+        font-size: 16px;
+    }
+
+}
+
+/* 767px ~ 320px */
+@media (max-width:767px) { 
+    .inner1{
+        padding: 0 22px;
+    }
+
+    .swiper-backface-hidden .swiper-slide{
+        padding-bottom: 62.5%;
+    }
+    .sc-visual .visual-slide .main-video{
+        position: absolute;
+        top: 0;left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .sc-visual .visual-slide .slogan{
+        font-size: 40px;
+    }
+    .sc-visual .visual-slide .swiper-slide-active .slogan br{
+        display: block;
+    }
+
+    .sc-search .group-search{
+        display: none;
+    }
+
+    .sc-people .swiper-backface-hidden .swiper-slide,
+    .sc-benefits .swiper-backface-hidden .swiper-slide{
+        padding-bottom: 0;
+    }
+    .sc-people .people-slide .swiper-slide .img-area{
+        max-width: 100%;
+        padding-bottom: 100%;   
+    }
+    .sc-people .people-slide{
+        margin-top: 25px;
+    }
+    .sc-people .people-slide .text-wrap{
+        margin-top: 21px;
+    }
+    .sc-people .people-slide .text-wrap .title{
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: -0.36px;
+    }
+    .sc-people .people-slide .text-wrap .btn-more{
+        display: none;
+    }
+    .sc-benefits .benefits-slide .swiper-slide .text-wrap .desc br{ 
+        display: block; 
+    }
+    .sc-board .title-area .sub-title{
+        font-size: 20px;
+    }
+    .sc-people .people-slide{
+        overflow: hidden;
+    }
+
+    .footer .inner1{
+        display: block;
+    }
+    .footer .corp{
+        display: inline-block;
+        vertical-align: top;
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: -0.3px;
+    }
+    .footer .policy {
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: bold;
+    }
+    .footer .related-wrap .btn-related{
+        margin-top: 15px;
+        width: 100%;
+        font-size: 12px;
+        color: #1d1d1d;
+    }
+    .footer .related-wrap .related-site .site-item{
+        padding: 0 12px;
+        font-size: 12px;
+    }
+}

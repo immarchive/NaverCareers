@@ -1,0 +1,89 @@
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    margin: -1px;
+}
+.hidden{
+    overflow: hidden;
+}
+
+.headline{
+    font-size: 64px;
+    line-height: 71px;
+    letter-spacing: -0.64px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.title-area .desc{
+    display: inline;
+    vertical-align: middle;
+    padding-right: 30px;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: -0.44px;
+    font-weight: bold;
+}
+.btn-more{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    letter-spacing: -0.36px;
+}
+.btn-more::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #000;
+}
+
+
+.popup-search .search-area .btn-search,
+.chk-area .title::before,
+.sc-search .keyword-ic .ic,
+.sc-search .group-search .keyword-area .title,
+.footer .related-wrap .btn-related::before,
+.sc-board .title-area .desc::after,
+.btn-box .btn,
+.sc-teams .contents-area .joinus-item .num-badge::before,
+.header .logo a {
+    background-image: url(../img/sp-bg.png);
+    background-repeat: no-repeat;
+    background-size: 328px 205px;
+}
+
+
+
+select option[value=""][disabled]{
+    display: none;
+}
+
+
+
+
+
+/* 1200px ~ 1024px */
+@media (max-width:1200px) {
+    .header .logo a,.header .btn-menu,
+    .header .logo a,.header .btn-menu.close,
+    .header .popup-menu .nav-item .title::after,
+    .group-search .btn-search .ic-btn,
+    .popup-search .btn-menu-close{
+        background-image: url(https://recruit.navercorp.com/share/tmplat/naver/img/sp_mo.png);
+        background-size: 195px 181px;
+    }
+}
+
+/* 1024px ~ 768px */
+@media (max-width:1024px) {}
+
+/* 767px ~ 320px */
+@media (max-width:767px) {}
